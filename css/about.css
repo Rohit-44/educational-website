@@ -1,0 +1,131 @@
+.achievement_container-left img{
+    height: 20rem;
+    width: 20rem;
+
+}
+
+.achievements{
+    margin-top: 5rem;
+}
+
+.achievement_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 9rem;
+   padding: 5rem;}
+
+.achievement_container p{
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievement_card{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 3rem;
+}
+
+.achievement_tag{
+    background-color: #2e3267;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: 400ms all ease;
+}
+
+.achievement_tag:hover{
+    background-color: #424890;
+    box-sizing: 0  3rem 0  rgba(0,0,0,0.3);
+}
+
+.achievement_icon{
+    background-color: red;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+
+
+.achievement_card  :nth-child(2)
+    .achievement_icon {
+        background-color: green;
+
+    }
+    .achievement_card  :nth-child(3)
+    .achievement_icon {
+        background-color: red;
+    }
+
+    .achievement_tag p{
+        margin-top: 1rem;
+    }
+   .team{
+    background-color: #2e3267;
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+    padding: 2rem 0;
+   }
+  
+
+   .team_container{
+    margin-left: 13.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+   
+   }
+
+   .Team_Member{
+    background: #424890;
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: 400ms all ease;
+    position: relative;
+    overflow: hidden;
+   }
+   
+   .Team_Member:hover{
+    background: transparent;
+    border-color: #6c63ff;
+   }
+
+   .Team_img img{
+    filter: saturate(0);
+   }
+
+   .Team_Member:hover img{
+    filter: saturate(1);
+   }
+
+   .Team_info{
+     text-align: center;
+     margin-top: 1.4rem;
+   }
+
+   .Team_info p{
+    color: lightyellow;
+   }
+   
+   .Team_Socials{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+   background-color: #6c63ff;
+   border-radius: 1rem 0 0 1rem;
+   box-shadow: -2rem 0  -2rem rgba(0, 0, 0, 0.3);
+   transition: 400ms all ease;
+   }
+
+   .Team_Member:hover
+    .Team_Socials{
+     right: 0;
+    
+   }
+
+   .Team_Socials a{
+    padding: 1rem;
+   }
